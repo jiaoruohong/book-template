@@ -1,0 +1,49 @@
+\documentclass[11pt]{ctexbook}
+
+\usepackage{./stylib/Page-Layout}
+\usepackage{./stylib/Sty-Pkg}
+\usepackage{./stylib/Font-Select}
+\usepackage{./stylib/Wiley-AuthoringTemplate}
+\usepackage{./stylib/Listings-Template}
+
+% \usepackage[authoryear]{natbib}% for name-date citation comment the below line
+\usepackage[numbers]{natbib}% for numbered citation comment the above line
+
+%%********************************************************************%%
+%%       The below macro controls the numbering of section heads      %%
+%% 0= no section numbers, 1= section, 2= subsection, 3= subsubsection %%
+\setcounter{secnumdepth}{3}
+%%********************************************************************%%
+
+%%**********************************************************************%%
+%%  The below macro controls the number of section heads displayed in   %%
+%%			Table of Contents?				%%
+%% 0= chapter, 1= section, 2= subsection, 3= subsubsection titles.	%%
+\setcounter{tocdepth}{2}
+%%**********************************************************************%%
+
+\makeindex
+
+\begin{document}
+
+\frontmatter
+\include{./part/fm}
+
+\mainmatter
+\include{./part/ch01}
+\include{./part/ch02}
+\include{./part/ch03}
+\include{./part/ch04}
+\include{./part/ch05}
+
+\backmatter
+\include{./part/app01}
+\include{./part/app02}
+
+%-------------------------------------------------------------------------------
+\bibliographystyle{plain}
+\bibliography{./bib/reference}
+
+\latexprintindex
+
+\end{document}

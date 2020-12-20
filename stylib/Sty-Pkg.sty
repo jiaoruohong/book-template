@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sty Pkgs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{ifxetex,ifluatex}
+
+\usepackage{tikz}
+% mix text and figs
+\usepackage{floatflt}
+% inlined bib file
+\usepackage{filecontents}
+\usepackage[title,titletoc]{appendix}
+% tables
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{diagbox}
+% times roman, including math (where possible)
+\usepackage{mathptmx}
+% make cols in last page equal in size
+\usepackage{flushend}
+\usepackage{hologo}
+% \usepackage{natbib}
+% 
+% %------------------------------------------------------------------------------
+% % The below macro controls the numbering of section heads
+% % 0= no section numbers, 1= section, 2= subsection, 3= subsubsection
+% \setcounter{secnumdepth}{3}
+% %------------------------------------------------------------------------------
+% % The below macro controls the number of section heads displayed in
+% % Table of Contents?
+% % 0= chapter, 1= section, 2= subsection, 3= subsubsection titles.
+% \setcounter{tocdepth}{2}
+% %------------------------------------------------------------------------------
+
+% order multiple entries in \cite{...}
+\usepackage{cite}
+% allow \url in bibtex for clickable links
+\usepackage{url}
+% color definitions, to be use for...
+\usepackage{xcolor}
+% % ...clickable refs within pdf...
+% \usepackage[breaklinks]{hyperref}%
+% \hypersetup{%
+%   colorlinks=false,
+%   linkbordercolor=white,
+%   pdfborder={0 0 0},
+%   citebordercolor=white,
+%   bookmarksopen=false,
+%   citecolor={red!70!black},
+%   urlcolor={blue!70!black}
+% }%
+
+\ifxetex % xelatex
+\else % pdflatex
+    % more compact and arguably nicer
+	\usepackage[kerning,spacing]{microtype}
+    % % break too-long urls in refs
+    % \usepackage{breakurl}
+\fi
