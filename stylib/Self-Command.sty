@@ -8,6 +8,7 @@
 \usepackage{eso-pic}
 
 \newcommand{\BackgroundPic}[1]{%
+\AddToShipoutPicture*{
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
 \vfill
@@ -18,7 +19,7 @@ width=\paperwidth,%
 keepaspectratio]{%
 #1}}%
 \vfill
-}}}
+}}}}
 
 % Set Blankpage
 %------------------------------------------------------------------------------
